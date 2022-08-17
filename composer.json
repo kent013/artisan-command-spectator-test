@@ -13,7 +13,8 @@
     "require": {
         "php": "^8.0",
         "laravel/framework": "^8.0 || ^9.0",
-        "cebe/php-openapi": "^1.7"
+        "cebe/php-openapi": "^1.7",
+        "hotmeteor/spectator": "v1.6.0.1"
     },
     "autoload": {
         "psr-4": {
