@@ -1,0 +1,47 @@
+{
+    "name": "kent013/artisan-command-spectator-test",
+    "description": "An artisan command to generate HTTP test using OpenAPI and Spectator.",
+    "keywords": ["artisan", "laravel", "spectator", "openapi", "testcase"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kentaro ISHITOYA",
+            "email": "kentaro.ishitoya@gmail.com",
+            "homepage": "https://github.com/kent013/"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "^8.0 || ^9.0",
+        "cebe/php-openapi": "^1.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "ArtisanCommandSpectatorTest\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ArtisanCommandSpectatorTest\\ServiceProvider"
+            ]
+        },
+        "phpstan": {
+            "includes": [
+                "extension.neon"
+            ]
+        }
+    },
+    "require-dev": {
+        "nunomaduro/larastan": "^2.1",
+        "friendsofphp/php-cs-fixer": "^3.9",
+        "orchestra/testbench": "^7.6",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan-webmozart-assert": "^1.2"
+    },
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    }
+}

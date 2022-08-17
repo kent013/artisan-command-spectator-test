@@ -1,0 +1,10 @@
+    /**
+     * DummyDocument
+     */
+    public function DummyTestFunctionName(): void
+    {
+        DummyRequestBody$this->DummyTestMethod('DummyEndPoint'DummyRequestParameter)
+            DummyAssertFunctions
+            ->assertValidRequest()
+            ->assertValidResponse();
+    }
