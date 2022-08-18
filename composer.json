@@ -26,11 +26,6 @@
             "providers": [
                 "ArtisanCommandSpectatorTest\\ServiceProvider"
             ]
-        },
-        "phpstan": {
-            "includes": [
-                "extension.neon"
-            ]
         }
     },
     "require-dev": {
