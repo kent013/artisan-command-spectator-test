@@ -1,43 +1,49 @@
 {
-    "name": "kent013/artisan-command-spectator-test",
-    "description": "An artisan command to generate HTTP test using OpenAPI and Spectator.",
-    "keywords": ["artisan", "laravel", "spectator", "openapi", "testcase"],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Kentaro ISHITOYA",
-            "email": "kentaro.ishitoya@gmail.com",
-            "homepage": "https://github.com/kent013/"
-        }
-    ],
-    "require": {
-        "php": "^8.0",
-        "laravel/framework": "^8.0 || ^9.0 || ^10.0",
-        "cebe/php-openapi": "^1.7",
-        "hotmeteor/spectator": "1.8"
-    },
-    "autoload": {
-        "psr-4": {
-            "ArtisanCommandSpectatorTest\\": "src/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "ArtisanCommandSpectatorTest\\ServiceProvider"
-            ]
-        }
-    },
-    "require-dev": {
-        "nunomaduro/larastan": "^2.6",
-        "friendsofphp/php-cs-fixer": "^3.17",
-        "orchestra/testbench": "^8.5",
-        "phpstan/extension-installer": "^1.3.1",
-        "phpstan/phpstan-webmozart-assert": "^1.2"
-    },
-    "config": {
-        "allow-plugins": {
-            "phpstan/extension-installer": true
-        }
+  "name": "kent013/artisan-command-spectator-test",
+  "description": "An artisan command to generate HTTP test using OpenAPI and Spectator.",
+  "keywords": [
+    "artisan",
+    "laravel",
+    "spectator",
+    "openapi",
+    "testcase"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kentaro ISHITOYA",
+      "email": "kentaro.ishitoya@gmail.com",
+      "homepage": "https://github.com/kent013/"
     }
+  ],
+  "require": {
+    "php": "^8.3",
+    "laravel/framework": "^10.0 || ^11.0",
+    "cebe/php-openapi": "^1.7",
+    "hotmeteor/spectator": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ArtisanCommandSpectatorTest\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "ArtisanCommandSpectatorTest\\ServiceProvider"
+      ]
+    }
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.17",
+    "orchestra/testbench": "^8.5",
+    "phpstan/extension-installer": "^1.3.1",
+    "phpstan/phpstan-webmozart-assert": "^1.2",
+    "larastan/larastan": "^2.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "phpstan/extension-installer": true
+    }
+  }
 }
